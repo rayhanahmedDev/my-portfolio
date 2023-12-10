@@ -1,9 +1,14 @@
+import Banner from "./Banner/Banner";
+import Navber from "./Navber/Navber";
 
 
 const Home = () => {
     return (
         <div>
-            <h2 className="text-3xl">This is Home</h2>
+            <Navber></Navber>
+            <div>
+                <Banner></Banner>
+            </div>
         </div>
     );
 };
