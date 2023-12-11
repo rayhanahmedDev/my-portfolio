@@ -1,6 +1,7 @@
 import img from '../../../assets/me.jpg'
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import './Banner.css'
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
 
@@ -15,7 +16,7 @@ const Banner = () => {
         <div>
             <div className="md:px-36 px-5 md:pb-36 py-10 md:h-[80vh] bg-container ">
                 <div className="flex items-center flex-col lg:flex-row-reverse justify-between" data-aos="fade-up"
-                        data-aos-duration="3000">
+                    data-aos-duration="3000">
                     <div>
                         <img src={img} className="md:w-[500px] h-[400px] rounded-lg" />
                     </div>
@@ -30,7 +31,9 @@ const Banner = () => {
                         </h3>
                         <div>
                             <button className="btn bg-gradient-to-r from-[#ffbd84] to-[#ff1f8e] text-white mr-6">Resume</button>
-                            <button className="btn bg-[#050748] border-[#050748] text-white">Contact Me</button>
+                            <Link to='/contact'>
+                                <button className="btn bg-[#050748] border-[#050748] text-white">Contact Me</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
