@@ -1,10 +1,11 @@
+import { NavLink } from "react-router-dom";
 
 const Navber = () => {
 
     const links = <> 
-       <li><a className="mr-4" href="/">Home</a></li>
+       <li><NavLink className="mr-4 " to="/">Home</NavLink></li>
        <li><a className="mr-4" href="/">About Me</a></li>
-       <li><a className="mr-4" href="/">Hire Me</a></li>
+       <li><NavLink className="mr-4" to='/portfolio'>Portfolio</NavLink></li>
     </>
 
     return (

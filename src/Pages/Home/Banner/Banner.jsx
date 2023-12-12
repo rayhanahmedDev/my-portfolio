@@ -2,6 +2,7 @@ import img from '../../../assets/me.jpg'
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import './Banner.css'
 import { Link } from 'react-router-dom';
+import resume from '../../../assets/Task.pdf'
 
 const Banner = () => {
 
@@ -18,7 +19,7 @@ const Banner = () => {
                 <div className="flex items-center flex-col lg:flex-row-reverse justify-between" data-aos="fade-up"
                     data-aos-duration="3000">
                     <div>
-                        <img src={img} className="md:w-[500px] h-[400px] rounded-lg" />
+                        <img src={img} className="md:w-[500px] md:h-[400px] rounded-lg" />
                     </div>
                     <div className='md:w-1/2 text-white mt-8 md:mt-0'>
                         <h3 className='text-2xl text-[#050748] my-4'>Hi There</h3>
@@ -30,7 +31,7 @@ const Banner = () => {
                             <Cursor></Cursor>
                         </h3>
                         <div>
-                            <button className="btn bg-gradient-to-r from-[#ffbd84] to-[#ff1f8e] text-white mr-6">Resume</button>
+                            <a className="btn bg-gradient-to-r from-[#ffbd84] to-[#ff1f8e] text-white mr-6" href={resume} download='resume'>Resume</a>
                             <Link to='/contact'>
                                 <button className="btn bg-[#050748] border-[#050748] text-white">Contact Me</button>
                             </Link>

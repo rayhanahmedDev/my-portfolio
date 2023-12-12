@@ -2,7 +2,7 @@
 const ContactForm = () => {
     return (
         <div>
-            <h2 className="text-3xl font-bold text-center">Lets Message Me</h2>
+            <h2 className="text-3xl font-bold text-center text-[#050748]">Lets Message Me</h2>
             <form className="contact">
                 <div className="my-12">
                     {/* input 1 */}
