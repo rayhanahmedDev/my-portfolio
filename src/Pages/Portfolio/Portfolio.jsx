@@ -15,7 +15,7 @@ const Portfolio = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* card section 1*/}
-                    <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 md:h-[105vh]">
+                    <div  data-aos="zoom-in-right" data-aos-duration="2000" className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 md:h-[105vh]">
                         <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl">
                             <img
                                 src={tourist}
@@ -29,7 +29,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     {/* card section 2 */}
-                    <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 md:h-[120vh]">
+                    <div data-aos="zoom-in-down" data-aos-duration="2000" className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 md:h-[120vh]">
                         <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl">
                             <img
                                 src={event}
@@ -43,7 +43,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     {/* card section 3*/}
-                    <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+                    <div data-aos="zoom-in-left" data-aos-duration="2000" className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
                         <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl">
                             <img
                                 src={career}
