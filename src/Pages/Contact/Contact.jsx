@@ -2,16 +2,17 @@ import { FaPhoneAlt, FaSkype } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import ContactForm from "../../Components/ContactForm";
 import Navber from "../Home/Navber/Navber";
+import Footer from "../Home/Footer/Footer";
 
 const Contact = () => {
     return (
         <div>
             <Navber></Navber>
             <div>
-                <h2 className="text-4xl text-[#050748] font-bold text-center my-16">Contact Me</h2>
+                <h2 className="text-4xl text-[#050748] font-bold text-center my-16">Contact Information</h2>
             </div>
-            <div className="md:px-36 flex flex-wrap md:flex-nowrap mx-5 md:mx-0 justify-between mb-16">
-                <div className="md:w-2/3 border">
+            <div className="md:px-36 flex items-center flex-wrap md:flex-nowrap gap-6 mx-5 md:mx-0 justify-between mb-16">
+                <div className="md:w-2/3">
                     <ContactForm></ContactForm>
                 </div>
                 <div className="md:w-1/2">
@@ -38,6 +39,7 @@ const Contact = () => {
                 </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
